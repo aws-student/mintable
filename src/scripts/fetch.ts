@@ -93,7 +93,7 @@ export default async () => {
     switch (config.balances.integration) {
         case IntegrationId.Google:
             const google = new GoogleIntegration(config)
-            await google.updateBalances(accounts)
+            //await google.updateBalances(accounts)
             break
         case IntegrationId.CSVExport:
             const csv = new CSVExportIntegration(config)

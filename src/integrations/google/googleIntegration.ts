@@ -358,17 +358,17 @@ export class GoogleIntegration {
         console.log(`https://docs.google.com/spreadsheets/d/${this.googleConfig.documentId}`)
     }
 
-    public updateBalances = async (accounts: Account[]) => {
-        // Update Account Balances Sheets
-        await this.updateSheet('Balances', accounts, this.config.balances.properties)
+    // public updateBalances = async (accounts: Account[]) => {
+    //     // Update Account Balances Sheets
+    //     await this.updateSheet('Balances', accounts, this.config.balances.properties)
 
-        // Sort Sheets
-        await this.sortSheets()
+    //     // Sort Sheets
+    //     await this.sortSheets()
 
-        // Format, etc.
-        await this.formatSheets()
+    //     // Format, etc.
+    //     await this.formatSheets()
 
-        logInfo('You can view your sheet here:\n')
-        console.log(`https://docs.google.com/spreadsheets/d/${this.googleConfig.documentId}`)
-    }
+    //     logInfo('You can view your sheet here:\n')
+    //     console.log(`https://docs.google.com/spreadsheets/d/${this.googleConfig.documentId}`)
+    // }
 }
